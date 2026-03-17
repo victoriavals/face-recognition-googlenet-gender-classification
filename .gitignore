@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Object files & OS files
+*.o
+*.os
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Streamlit config (if any)
+.streamlit/secrets.toml
