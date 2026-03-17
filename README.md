@@ -9,6 +9,7 @@ The primary model architecture used for training is **GoogLeNet**, implemented i
 - **Data Pipeline:** Custom PyTorch `DataLoader` to map images to their respective attributes from `list_attribute.txt`.
 - **Deep Learning Model:** Training a Convolutional Neural Network (CNN) using GoogLeNet to classify gender.
 - **Evaluation:** Generating classification reports and confusion matrices to evaluate model performance.
+- **Interactive UI:** Streamlit frontend application (`app.py`) allowing users to classify gender from uploaded images or live webcam captures.
 
 ## 🛠️ Technologies Used
 - **Language:** Python
@@ -21,6 +22,8 @@ The primary model architecture used for training is **GoogLeNet**, implemented i
 
 ## 🗂️ File Structure
 - **`googlenet-gender-classification.ipynb`**: The main notebook containing the full pipeline from EDA, DataLoader creation, model training, and evaluation.
+- **`app.py`**: The Streamlit frontend application for interactive gender classification using the trained GoogLeNet model.
+- **`requirements.txt`**: List of dependencies required to run the Streamlit application.
 - **`best_model.pth`**: The saved state dictionary of the best performing model.
 - **`list_attribute.txt`**: The ground truth labels (40 attributes) for all images in the dataset.
 - **`Images/`**: Directory containing the sample `.jpg` faces used for training and validation.
@@ -34,6 +37,13 @@ The primary model architecture used for training is **GoogLeNet**, implemented i
 4. **Inference & Evaluation:** The trained model is evaluated on the test set, generating metrics like precision, recall, f1-score, and a confusion matrix.
 
 ## 🚀 Getting Started
+### Running the Streamlit App
+To run the interactive web application:
+1. Ensure your dependencies are installed: `pip install -r requirements.txt`
+2. Run the application: `streamlit run app.py`
+3. Access the UI via your web browser to upload images or use your webcam.
+
+### Training the Model
 1. Ensure you have the required dependencies installed (PyTorch, Pandas, Scikit-learn, Matplotlib, Seaborn).
 2. Ensure the `Images/` dataset directory is populated with CelebA `.jpg` images.
 3. Run the `googlenet-gender-classification.ipynb` notebook step-by-step.
