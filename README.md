@@ -43,6 +43,18 @@ To run the interactive web application:
 2. Run the application: `streamlit run app.py`
 3. Access the UI via your web browser to upload images or use your webcam.
 
+### App Screenshots
+
+**Upload Image Mode**:
+![Upload Mode](assets/upload_mode.png)
+
+**Webcam Capture Mode**:
+![Webcam Mode](assets/webcam_mode.png)
+
+**Prediction Result Example** (Male with 93.9% confidence):
+![Prediction Result](assets/prediction_result.png)
+
+
 ### Training the Model
 1. Ensure you have the required dependencies installed (PyTorch, Pandas, Scikit-learn, Matplotlib, Seaborn).
 2. Ensure the `Images/` dataset directory is populated with CelebA `.jpg` images.
